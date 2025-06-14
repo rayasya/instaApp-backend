@@ -15,7 +15,7 @@ class ProfilePageController extends Controller
     public function profile()
     {
         try {
-            $user = User::find(Auth::user()->id)->first();
+            $user = User::find(Auth::user()->id);
             if ($user) {
                 return response()->json([
                     'status' => 'success',
