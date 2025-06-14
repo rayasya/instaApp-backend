@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('username', 50)->unique();
             $table->string('email', 100)->unique();
             $table->string('password');
-            $table->string('full_name', 100)->nullable();
+            $table->string('name', 100)->nullable();
             $table->text('bio')->nullable();
             $table->string('profile_picture')->nullable();
             $table->integer('posts_count')->default(0);

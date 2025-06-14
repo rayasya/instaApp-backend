@@ -22,7 +22,7 @@ class PostSeeder extends Seeder
 
             for ($i = 0; $i < $postsCount; $i++) {
                 $postType = ['text', 'image', 'image_with_caption'][rand(0, 2)];
-                $visibility = ['public', 'friends', 'custom'][rand(0, 2)];
+                $visibility = ['public', 'private'][rand(0, 1)];
 
                 Post::create([
                     'user_id' => $user->id,

@@ -17,7 +17,7 @@ return new class extends Migration
             $table->text('caption')->nullable();
             $table->string('image_url')->nullable();
             $table->enum('post_type', ['text', 'image', 'image_with_caption'])->default('text');
-            $table->enum('visibility', ['public', 'private', 'friends', 'custom'])->default('public');
+            $table->enum('visibility', ['public', 'private'])->default('public');
             $table->integer('likes_count')->default(0);
             $table->integer('comments_count')->default(0);
             $table->integer('saves_count')->default(0);

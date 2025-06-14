@@ -19,7 +19,7 @@ class UserSeeder extends Seeder
                 'username' => 'user' . $i,
                 'email' => 'user' . $i . '@example.com',
                 'password' => Hash::make('password'),
-                'full_name' => 'User ' . $i,
+                'name' => 'User ' . $i,
                 'bio' => 'This is user ' . $i . ' bio.',
                 'profile_picture' => 'https://via.placeholder.com/150',
                 'posts_count' => 0,
