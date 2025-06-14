@@ -30,7 +30,7 @@ Route::middleware(['auth:sanctum'])->group(function () {
     Route::get('activity', [ActivityPageController::class, 'activity'])->name('activity');
 
     // Profile Page API
-    Route::get('profile/{username}', [ProfilePageController::class, 'profile'])->name('profile');
+    Route::get('profile', [ProfilePageController::class, 'profile'])->name('profile');
     Route::post('editProfile', [ProfilePageController::class, 'editProfile'])->name('editProfile');
 
     Route::post('logout', [AuthController::class, 'logout'])->name('logout');
